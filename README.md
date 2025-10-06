@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# React Flow Workflow Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a technical test to implement a workflow builder using React and the React Flow library. It features a dynamic workflow canvas where users can add, connect, and manage different types of nodes based on a set of requirements.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✅ Implemented Features
 
-### `npm start`
+### Level 1: Basic Workflow Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- A simple workflow is initialized with a **Start Node** and an **End Node**.
+- The nodes are connected by a custom edge that features a `+` button to add new nodes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*Suggested Image: A screenshot of the initial Start and End nodes connected by the edge with the `+` button.*
+`[Your Image of the Initial Workflow Here]`
 
-### `npm test`
+### Level 2: Action Nodes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clicking the `+` button on an edge opens a selection menu.
+- Choosing **Action Node** from the menu inserts a new node into the workflow at that position.
+- The new node is automatically connected to its surrounding nodes.
+- Clicking on an Action Node opens a **Settings Panel** on the right.
+- The Settings Panel allows the node's name to be changed or the node to be deleted.
 
-### `npm run build`
+*Suggested Image: A screenshot showing a workflow with a few Action Nodes and the Settings Panel open for one of them.*
+`[Your Image of an Action Node and the Settings Panel Here]`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Level 3: If / Else Node
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Choosing **If / Else Node** from the selection menu inserts a complex conditional node.
+- By default, the If/Else node is created with one "Branch" and one "Else" path.
+- The **Settings Panel** for this node allows:
+  - Changing the node's main label.
+  - Editing the names of existing branches.
+  - Adding new branches to the node.
+- The branch labels are rendered as part of the node and are not clickable themselves; editing is done only through the Settings Panel.
+- The entire If/Else node and its branches can be deleted.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*Suggested Image: A screenshot of a complex workflow featuring an If/Else node with multiple branches and its corresponding Settings Panel.*
+`[Your Image of an If/Else Node and its Advanced Settings Panel Here]`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🚀 Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To set up the project dependencies, navigate to the project directory and run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🏃 Running the Application
 
-## Learn More
+To start the development server and run the application, use the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will open the application in your default web browser, typically at `http://localhost:3000`.
