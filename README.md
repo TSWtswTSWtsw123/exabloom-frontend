@@ -11,8 +11,7 @@ This project is a technical test to implement a workflow builder using React and
 - A simple workflow is initialized with a **Start Node** and an **End Node**.
 - The nodes are connected by a custom edge that features a `+` button to add new nodes.
 
-*Suggested Image: A screenshot of the initial Start and End nodes connected by the edge with the `+` button.*
-`[Your Image of the Initial Workflow Here]`
+![image-20251006164823185](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20251006164823185.png)
 
 ### Level 2: Action Nodes
 
@@ -22,8 +21,7 @@ This project is a technical test to implement a workflow builder using React and
 - Clicking on an Action Node opens a **Settings Panel** on the right.
 - The Settings Panel allows the node's name to be changed or the node to be deleted.
 
-*Suggested Image: A screenshot showing a workflow with a few Action Nodes and the Settings Panel open for one of them.*
-`[Your Image of an Action Node and the Settings Panel Here]`
+![image-20251006164901007](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20251006164901007.png)
 
 ### Level 3: If / Else Node
 
@@ -36,8 +34,7 @@ This project is a technical test to implement a workflow builder using React and
 - The branch labels are rendered as part of the node and are not clickable themselves; editing is done only through the Settings Panel.
 - The entire If/Else node and its branches can be deleted.
 
-*Suggested Image: A screenshot of a complex workflow featuring an If/Else node with multiple branches and its corresponding Settings Panel.*
-`[Your Image of an If/Else Node and its Advanced Settings Panel Here]`
+![image-20251006165409794](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20251006165409794.png)
 
 ---
 
